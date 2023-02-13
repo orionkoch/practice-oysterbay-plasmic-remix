@@ -9,7 +9,13 @@
 		"start": "cross-env NODE_ENV=production remix-serve build"
 	},
 	"dependencies": {
+		"@plasmicapp/cli": "^0.1.211",
+		"@plasmicapp/host": "^1.0.105",
 		"@plasmicapp/loader-react": "^1.0.215",
+		"@plasmicapp/react-web": "^0.2.156",
+		"@plasmicpkgs/plasmic-basic-components": "^0.0.114",
+		"@plasmicpkgs/plasmic-cms": "^0.0.151",
+		"@plasmicpkgs/plasmic-embed-css": "^0.1.89",
 		"@remix-run/node": "^1.7.2",
 		"@remix-run/react": "^1.7.2",
 		"@remix-run/serve": "^1.7.2",

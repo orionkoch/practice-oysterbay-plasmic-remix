@@ -1,0 +1,484 @@
+{
+  "platform": "react",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "inlined",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/static/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
+      "projectApiToken": "vXGGQpdi9fhcncabBdg8DcMRUbkz0iRW6HS1jzQufQR6QH0MasPwr9SX7ap4SsK3xXwwXmzZtglWGe0Rm2nw",
+      "projectName": "plasmic-basic-components",
+      "version": "3.11.0",
+      "cssFilePath": "plasmic/plasmic_basic_components/plasmic_plasmic_basic_components.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "CMDBvOhaI4s",
+          "name": "Iframe",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "RhitNJW5Zu-",
+          "name": "Video",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "PKldDYkH42",
+          "name": "Embed",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "D4RbnlpRXg3",
+          "name": "DataProvider",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        }
+      ]
+    },
+    {
+      "projectId": "8PtdGodUbexNYgkuyBUcWu",
+      "projectApiToken": "34o5R5KswluuZ4sD83F88oQrcLWsNNeUpCptQ8Okf4hYqgjnHnX2idGAlhtB7WWQQelNAInf5XFazR1cGw",
+      "projectName": "plasmic-embed-css",
+      "version": "3.8.0",
+      "cssFilePath": "plasmic/plasmic_embed_css/plasmic_plasmic_embed_css.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/plasmic_embed_css/PlasmicGlobalContextsProvider.tsx",
+      "codeComponents": [
+        {
+          "id": "qF0uJxFztB",
+          "name": "EmbedCss",
+          "componentImportPath": "@plasmicpkgs/plasmic-embed-css"
+        }
+      ]
+    },
+    {
+      "projectId": "hjKYmYi6HMwK6TRyk7ew5R",
+      "projectApiToken": "L5kqyh9xqKCqpdc8gqCglVcLZTxdkkP1Dt9pLUlWpyKVItIbbXr5272ePgMpZZiezhSe0AIOuQB353jQnw",
+      "projectName": "plasmic-cms",
+      "version": "6.11.0",
+      "cssFilePath": "plasmic/plasmic_cms/plasmic_plasmic_cms.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/plasmic_cms/PlasmicGlobalContextsProvider.tsx",
+      "codeComponents": [
+        {
+          "id": "w6HdOz-Pcn",
+          "name": "CmsRowField",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        },
+        {
+          "id": "Ds6UdKRHmq",
+          "name": "CmsRowLink",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        },
+        {
+          "id": "dj_Vc2QmFA",
+          "name": "CmsRowImage",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        },
+        {
+          "id": "r3UO4W-xcR",
+          "name": "CmsRowFieldValue",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        },
+        {
+          "id": "OREVbGCcgN",
+          "name": "CmsCredentialsProvider",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        },
+        {
+          "id": "8N9-WfZSaq",
+          "name": "CmsQueryRepeater",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        }
+      ]
+    },
+    {
+      "projectId": "dPRrTyFHK7W9ZJqYsJHqzM",
+      "projectApiToken": "9VJm8vnHA9jgk2CAmCPZMDp8PcRTuXVgWHZvERQgpCuVsvokC5slwcNOvjPtFuM0GnnuXWDS5bWhuqpmnKLOg",
+      "projectName": "Pracitce Oyster Bay",
+      "version": "latest",
+      "cssFilePath": "plasmic/pracitce_oyster_bay/plasmic_pracitce_oyster_bay.module.css",
+      "components": [
+        {
+          "id": "l--2YaZ18sjM",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "dPRrTyFHK7W9ZJqYsJHqzM",
+          "renderModuleFilePath": "plasmic/pracitce_oyster_bay/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "Homepage.tsx"
+          },
+          "cssFilePath": "plasmic/pracitce_oyster_bay/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "NqrNu0UME_",
+          "name": "About",
+          "type": "managed",
+          "projectId": "dPRrTyFHK7W9ZJqYsJHqzM",
+          "renderModuleFilePath": "plasmic/pracitce_oyster_bay/PlasmicAbout.tsx",
+          "importSpec": {
+            "modulePath": "About.tsx"
+          },
+          "cssFilePath": "plasmic/pracitce_oyster_bay/PlasmicAbout.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "XxpXfQpfq__Y",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "dPRrTyFHK7W9ZJqYsJHqzM",
+          "renderModuleFilePath": "plasmic/pracitce_oyster_bay/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/pracitce_oyster_bay/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "2sF766dr30S",
+          "name": "Switch",
+          "type": "managed",
+          "projectId": "dPRrTyFHK7W9ZJqYsJHqzM",
+          "renderModuleFilePath": "plasmic/pracitce_oyster_bay/PlasmicSwitch.tsx",
+          "importSpec": {
+            "modulePath": "Switch.tsx"
+          },
+          "cssFilePath": "plasmic/pracitce_oyster_bay/PlasmicSwitch.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "switch"
+        },
+        {
+          "id": "wNOT5mM2WyL",
+          "name": "Schedule",
+          "type": "managed",
+          "projectId": "dPRrTyFHK7W9ZJqYsJHqzM",
+          "renderModuleFilePath": "plasmic/pracitce_oyster_bay/PlasmicSchedule.tsx",
+          "importSpec": {
+            "modulePath": "Schedule.tsx"
+          },
+          "cssFilePath": "plasmic/pracitce_oyster_bay/PlasmicSchedule.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        }
+      ],
+      "icons": [
+        {
+          "id": "QOcwsJ1FCjFi",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/pracitce_oyster_bay/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "M1CLxOTRtR5N",
+          "name": "BarsIcon",
+          "moduleFilePath": "plasmic/pracitce_oyster_bay/icons/PlasmicIcon__Bars.tsx"
+        },
+        {
+          "id": "lRH1V0Ahv6zm",
+          "name": "TimesIcon",
+          "moduleFilePath": "plasmic/pracitce_oyster_bay/icons/PlasmicIcon__Times.tsx"
+        },
+        {
+          "id": "qIT_KL1MhIGr",
+          "name": "LogoWhitesvgIcon",
+          "moduleFilePath": "plasmic/pracitce_oyster_bay/icons/PlasmicIcon__LogoWhitesvg.tsx"
+        },
+        {
+          "id": "UbCcwcWXMOYG",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/pracitce_oyster_bay/icons/PlasmicIcon__Icon.tsx"
+        },
+        {
+          "id": "6ZiWtdz-W1Z0",
+          "name": "ButtonArrowIcon",
+          "moduleFilePath": "plasmic/pracitce_oyster_bay/icons/PlasmicIcon__ButtonArrow.tsx"
+        },
+        {
+          "id": "Auzj3lrIV0er",
+          "name": "ShoppingCartIcon",
+          "moduleFilePath": "plasmic/pracitce_oyster_bay/icons/PlasmicIcon__ShoppingCart.tsx"
+        },
+        {
+          "id": "0NuuJLMAbI8U",
+          "name": "HeartOIcon",
+          "moduleFilePath": "plasmic/pracitce_oyster_bay/icons/PlasmicIcon__HeartO.tsx"
+        },
+        {
+          "id": "MJKanMJ0jrP5",
+          "name": "ExpandIcon",
+          "moduleFilePath": "plasmic/pracitce_oyster_bay/icons/PlasmicIcon__Expand.tsx"
+        },
+        {
+          "id": "UK87j1GNrien",
+          "name": "StarIcon",
+          "moduleFilePath": "plasmic/pracitce_oyster_bay/icons/PlasmicIcon__Star.tsx"
+        },
+        {
+          "id": "2giGNitopO0E",
+          "name": "Icon2Icon",
+          "moduleFilePath": "plasmic/pracitce_oyster_bay/icons/PlasmicIcon__Icon2.tsx"
+        },
+        {
+          "id": "iCYCG9CBDFuC",
+          "name": "Icon3Icon",
+          "moduleFilePath": "plasmic/pracitce_oyster_bay/icons/PlasmicIcon__Icon3.tsx"
+        },
+        {
+          "id": "7CtWcYdGlmmP",
+          "name": "QuotessvgIcon",
+          "moduleFilePath": "plasmic/pracitce_oyster_bay/icons/PlasmicIcon__Quotessvg.tsx"
+        },
+        {
+          "id": "iRLbodS886l",
+          "name": "Icon38Icon",
+          "moduleFilePath": "plasmic/pracitce_oyster_bay/icons/PlasmicIcon__Icon38.tsx"
+        },
+        {
+          "id": "QLAS9aiAy6p",
+          "name": "Icon4Icon",
+          "moduleFilePath": "plasmic/pracitce_oyster_bay/icons/PlasmicIcon__Icon4.tsx"
+        },
+        {
+          "id": "VTAAmSXa7QY",
+          "name": "Icon5Icon",
+          "moduleFilePath": "plasmic/pracitce_oyster_bay/icons/PlasmicIcon__Icon5.tsx"
+        },
+        {
+          "id": "4E1S_Vn3o6p",
+          "name": "Icon28Icon",
+          "moduleFilePath": "plasmic/pracitce_oyster_bay/icons/PlasmicIcon__Icon28.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "5bdsJYoiCsPU",
+          "name": "image",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image.png"
+        },
+        {
+          "id": "fX8o54trY5Fa",
+          "name": "image 2",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image2.jpeg"
+        },
+        {
+          "id": "klfawiAQ0Jhx",
+          "name": "image 3",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image3.jpeg"
+        },
+        {
+          "id": "6nM_5s_aEORU",
+          "name": "image 4",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image4.jpeg"
+        },
+        {
+          "id": "aysSthUekNc0",
+          "name": "image 5",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image5.jpeg"
+        },
+        {
+          "id": "yiK4Y5nY_N6x",
+          "name": "image 6",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image6.jpeg"
+        },
+        {
+          "id": "6hYO4MrNpo2T",
+          "name": "image 7",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image7.jpeg"
+        },
+        {
+          "id": "f-Dp93TmtbRf",
+          "name": "image 8",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image8.jpeg"
+        },
+        {
+          "id": "EZ8wjuk47X7Y",
+          "name": "image 9",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image9.jpeg"
+        },
+        {
+          "id": "ZlNebk8-8NcU",
+          "name": "image 10",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image10.jpeg"
+        },
+        {
+          "id": "PwJkJliPO_sR",
+          "name": "image 11",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image11.jpeg"
+        },
+        {
+          "id": "2xUWBseIwscR",
+          "name": "image 12",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image12.jpeg"
+        },
+        {
+          "id": "npa3FzzmFLtx",
+          "name": "image 13",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image13.jpeg"
+        },
+        {
+          "id": "0-rw6YCEX2wo",
+          "name": "image 14",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image14.png"
+        },
+        {
+          "id": "HKF19pNZ9YEL",
+          "name": "image 15",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image15.png"
+        },
+        {
+          "id": "htIPY_giKDBM",
+          "name": "image 16",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image16.png"
+        },
+        {
+          "id": "3zKuNl0y8iXf",
+          "name": "image 17",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image17.png"
+        },
+        {
+          "id": "vtUKq7Kam4xv",
+          "name": "image 18",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image18.png"
+        },
+        {
+          "id": "M6PUg63Tf2t6",
+          "name": "image 19",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image19.webp"
+        },
+        {
+          "id": "6UOHe6BKYQwO",
+          "name": "image 20",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image20.svg"
+        },
+        {
+          "id": "M_nAWsFrES3v",
+          "name": "image 21",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image21.png"
+        },
+        {
+          "id": "RECbffyZiwEz",
+          "name": "image 22",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image22.png"
+        },
+        {
+          "id": "5hdnn2U191Y0",
+          "name": "image 23",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image23.png"
+        },
+        {
+          "id": "gP9Nx12tvjUn",
+          "name": "image 24",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image24.png"
+        },
+        {
+          "id": "w-XLnmfhp57o",
+          "name": "image 25",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image25.png"
+        },
+        {
+          "id": "GeYTortzYgur",
+          "name": "image 26",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image26.png"
+        },
+        {
+          "id": "HwLp7-oqobCz",
+          "name": "image 27",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image27.png"
+        },
+        {
+          "id": "pJlimyVIl5qI",
+          "name": "image 28",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image28.png"
+        },
+        {
+          "id": "C-d6l4CyotTF",
+          "name": "image 29",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image29.png"
+        },
+        {
+          "id": "GbTtKnkrE-7x",
+          "name": "image 30",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image30.png"
+        },
+        {
+          "id": "nzetleYbD4mR",
+          "name": "image 31",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image31.webp"
+        },
+        {
+          "id": "_SXiDMMrY2nv",
+          "name": "image 32",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image32.webp"
+        },
+        {
+          "id": "xuwMgUIwysP",
+          "name": "image 33",
+          "filePath": "plasmic/pracitce_oyster_bay/images/image33.svg"
+        },
+        {
+          "id": "qUB7J3BWU",
+          "name": "Studio_background_2560X1440.jpg",
+          "filePath": "plasmic/pracitce_oyster_bay/images/studioBackground2560X1440Jpg.jpeg"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "plasmic/pracitce_oyster_bay/PlasmicGlobalContextsProvider.tsx",
+      "codeComponents": [
+        {
+          "id": "XyUwtAKc-3",
+          "name": "PlasmicHead",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "vXoUaJoc3f",
+          "name": "Fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ]
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "V_GhBehH8UUPX",
+        "name": "Screen",
+        "projectId": "dPRrTyFHK7W9ZJqYsJHqzM",
+        "contextFilePath": "plasmic/pracitce_oyster_bay/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "cliVersion": "0.1.211",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.211/dist/plasmic.schema.json"
+}
