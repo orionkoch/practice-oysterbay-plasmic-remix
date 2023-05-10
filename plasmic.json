@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "inlined",
@@ -191,6 +191,19 @@
           "cssFilePath": "plasmic/pracitce_oyster_bay/PlasmicSchedule.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "GemSAzldPG",
+          "name": "NewPage",
+          "type": "managed",
+          "projectId": "dPRrTyFHK7W9ZJqYsJHqzM",
+          "renderModuleFilePath": "plasmic/pracitce_oyster_bay/PlasmicNewPage.tsx",
+          "importSpec": {
+            "modulePath": "NewPage.tsx"
+          },
+          "cssFilePath": "plasmic/pracitce_oyster_bay/PlasmicNewPage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -289,62 +302,62 @@
         {
           "id": "fX8o54trY5Fa",
           "name": "image 2",
-          "filePath": "plasmic/pracitce_oyster_bay/images/image2.jpeg"
+          "filePath": "plasmic/pracitce_oyster_bay/images/image2.jpg"
         },
         {
           "id": "klfawiAQ0Jhx",
           "name": "image 3",
-          "filePath": "plasmic/pracitce_oyster_bay/images/image3.jpeg"
+          "filePath": "plasmic/pracitce_oyster_bay/images/image3.jpg"
         },
         {
           "id": "6nM_5s_aEORU",
           "name": "image 4",
-          "filePath": "plasmic/pracitce_oyster_bay/images/image4.jpeg"
+          "filePath": "plasmic/pracitce_oyster_bay/images/image4.jpg"
         },
         {
           "id": "aysSthUekNc0",
           "name": "image 5",
-          "filePath": "plasmic/pracitce_oyster_bay/images/image5.jpeg"
+          "filePath": "plasmic/pracitce_oyster_bay/images/image5.jpg"
         },
         {
           "id": "yiK4Y5nY_N6x",
           "name": "image 6",
-          "filePath": "plasmic/pracitce_oyster_bay/images/image6.jpeg"
+          "filePath": "plasmic/pracitce_oyster_bay/images/image6.jpg"
         },
         {
           "id": "6hYO4MrNpo2T",
           "name": "image 7",
-          "filePath": "plasmic/pracitce_oyster_bay/images/image7.jpeg"
+          "filePath": "plasmic/pracitce_oyster_bay/images/image7.jpg"
         },
         {
           "id": "f-Dp93TmtbRf",
           "name": "image 8",
-          "filePath": "plasmic/pracitce_oyster_bay/images/image8.jpeg"
+          "filePath": "plasmic/pracitce_oyster_bay/images/image8.jpg"
         },
         {
           "id": "EZ8wjuk47X7Y",
           "name": "image 9",
-          "filePath": "plasmic/pracitce_oyster_bay/images/image9.jpeg"
+          "filePath": "plasmic/pracitce_oyster_bay/images/image9.jpg"
         },
         {
           "id": "ZlNebk8-8NcU",
           "name": "image 10",
-          "filePath": "plasmic/pracitce_oyster_bay/images/image10.jpeg"
+          "filePath": "plasmic/pracitce_oyster_bay/images/image10.jpg"
         },
         {
           "id": "PwJkJliPO_sR",
           "name": "image 11",
-          "filePath": "plasmic/pracitce_oyster_bay/images/image11.jpeg"
+          "filePath": "plasmic/pracitce_oyster_bay/images/image11.jpg"
         },
         {
           "id": "2xUWBseIwscR",
           "name": "image 12",
-          "filePath": "plasmic/pracitce_oyster_bay/images/image12.jpeg"
+          "filePath": "plasmic/pracitce_oyster_bay/images/image12.jpg"
         },
         {
           "id": "npa3FzzmFLtx",
           "name": "image 13",
-          "filePath": "plasmic/pracitce_oyster_bay/images/image13.jpeg"
+          "filePath": "plasmic/pracitce_oyster_bay/images/image13.jpg"
         },
         {
           "id": "0-rw6YCEX2wo",
@@ -479,6 +492,6 @@
     ]
   },
   "wrapPagesWithGlobalContexts": true,
-  "cliVersion": "0.1.211",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.211/dist/plasmic.schema.json"
+  "cliVersion": "0.1.275",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.275/dist/plasmic.schema.json"
 }
