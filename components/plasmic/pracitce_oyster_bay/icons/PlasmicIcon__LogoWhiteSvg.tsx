@@ -1,15 +1,15 @@
-// @ts-nocheck
 /* eslint-disable */
 /* tslint:disable */
+// @ts-nocheck
 /* prettier-ignore-start */
 import React from "react";
 import { classNames } from "@plasmicapp/react-web";
 
-export type LogoWhitesvgIconProps = React.ComponentProps<"svg"> & {
+export type LogoWhiteSvgIconProps = React.ComponentProps<"svg"> & {
   title?: string;
 };
 
-export function LogoWhitesvgIcon(props: LogoWhitesvgIconProps) {
+export function LogoWhiteSvgIcon(props: LogoWhiteSvgIconProps) {
   const { className, style, title, ...restProps } = props;
   return (
     <svg
@@ -63,5 +63,5 @@ export function LogoWhitesvgIcon(props: LogoWhitesvgIconProps) {
   );
 }
 
-export default LogoWhitesvgIcon;
+export default LogoWhiteSvgIcon;
 /* prettier-ignore-end */
