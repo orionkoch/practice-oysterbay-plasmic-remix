@@ -151,6 +151,8 @@
   background: none;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  row-gap: 0px;
+  column-gap: 0px;
   box-shadow: none;
   box-sizing: border-box;
   text-decoration-line: none;
@@ -164,9 +166,10 @@
   background: none;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  row-gap: 0px;
+  column-gap: 0px;
   box-shadow: none;
   box-sizing: border-box;
-  text-decoration-line: none;
   margin: 0;
   border-width: 0px;
 }
@@ -602,7 +605,7 @@ ul:where(.root_reset_tags) {
   padding-left: var(--mixin-zSKCGIMsc9K9l_padding-left);
   position: var(--mixin-zSKCGIMsc9K9l_position);
   list-style-type: var(--mixin-zSKCGIMsc9K9l_list-style-type);
-  flex-column-gap: var(--mixin-zSKCGIMsc9K9l_flex-column-gap);
+  column-gap: var(--mixin-zSKCGIMsc9K9l_column-gap);
 }
 
 :where(.root_reset) ol:where(.ol),
@@ -618,7 +621,7 @@ ol:where(.root_reset_tags) {
   padding-left: var(--mixin-vglIlYEKzqxfe_padding-left);
   position: var(--mixin-vglIlYEKzqxfe_position);
   list-style-type: var(--mixin-vglIlYEKzqxfe_list-style-type);
-  flex-column-gap: var(--mixin-vglIlYEKzqxfe_flex-column-gap);
+  column-gap: var(--mixin-vglIlYEKzqxfe_column-gap);
 }
 
 :where(.root_reset) h5:where(.h5),

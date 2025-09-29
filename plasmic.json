@@ -36,24 +36,50 @@
         {
           "id": "CMDBvOhaI4s",
           "name": "Iframe",
+          "displayName": "hostless-iframe",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         },
         {
           "id": "RhitNJW5Zu-",
           "name": "Video",
+          "displayName": "hostless-html-video",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         },
         {
           "id": "PKldDYkH42",
           "name": "Embed",
+          "displayName": "hostless-embed",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         },
         {
           "id": "D4RbnlpRXg3",
           "name": "DataProvider",
+          "displayName": "hostless-data-provider",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "zlBHsvkFlN",
+          "name": "ConditionGuard",
+          "displayName": "hostless-condition-guard",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "K-mWGqrHefEp",
+          "name": "SideEffect",
+          "displayName": "hostless-side-effect",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "SpkzmXJqg27p",
+          "name": "Timer",
+          "displayName": "hostless-timer",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
-      ]
+      ],
+      "splitsProviderFilePath": "",
+      "styleTokensProviderFilePath": "plasmic/plasmic_basic_components/PlasmicStyleTokensProvider.tsx",
+      "projectModuleFilePath": "plasmic/plasmic_basic_components/plasmic.tsx",
+      "customFunctions": []
     },
     {
       "projectId": "8PtdGodUbexNYgkuyBUcWu",
@@ -70,9 +96,14 @@
         {
           "id": "qF0uJxFztB",
           "name": "EmbedCss",
+          "displayName": "global-embed-css",
           "componentImportPath": "@plasmicpkgs/plasmic-embed-css"
         }
-      ]
+      ],
+      "splitsProviderFilePath": "",
+      "styleTokensProviderFilePath": "plasmic/plasmic_embed_css/PlasmicStyleTokensProvider.tsx",
+      "projectModuleFilePath": "plasmic/plasmic_embed_css/plasmic.tsx",
+      "customFunctions": []
     },
     {
       "projectId": "hjKYmYi6HMwK6TRyk7ew5R",
@@ -89,34 +120,50 @@
         {
           "id": "w6HdOz-Pcn",
           "name": "CmsRowField",
+          "displayName": "hostless-plasmic-cms-row-field",
           "componentImportPath": "@plasmicpkgs/plasmic-cms"
         },
         {
           "id": "Ds6UdKRHmq",
           "name": "CmsRowLink",
+          "displayName": "hostless-plasmic-cms-row-link",
           "componentImportPath": "@plasmicpkgs/plasmic-cms"
         },
         {
           "id": "dj_Vc2QmFA",
           "name": "CmsRowImage",
+          "displayName": "hostless-plasmic-cms-row-image",
           "componentImportPath": "@plasmicpkgs/plasmic-cms"
         },
         {
           "id": "r3UO4W-xcR",
           "name": "CmsRowFieldValue",
+          "displayName": "hostless-plasmic-cms-row-value",
           "componentImportPath": "@plasmicpkgs/plasmic-cms"
         },
         {
           "id": "OREVbGCcgN",
           "name": "CmsCredentialsProvider",
+          "displayName": "hostless-plasmic-cms-credentials-provider",
           "componentImportPath": "@plasmicpkgs/plasmic-cms"
         },
         {
           "id": "8N9-WfZSaq",
           "name": "CmsQueryRepeater",
+          "displayName": "hostless-plasmic-cms-query-repeater",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        },
+        {
+          "id": "8uEaibqi6348",
+          "name": "CmsCount",
+          "displayName": "hostless-plasmic-cms-count",
           "componentImportPath": "@plasmicpkgs/plasmic-cms"
         }
-      ]
+      ],
+      "splitsProviderFilePath": "",
+      "styleTokensProviderFilePath": "plasmic/plasmic_cms/PlasmicStyleTokensProvider.tsx",
+      "projectModuleFilePath": "plasmic/plasmic_cms/plasmic.tsx",
+      "customFunctions": []
     },
     {
       "projectId": "dPRrTyFHK7W9ZJqYsJHqzM",
@@ -209,8 +256,8 @@
       "icons": [
         {
           "id": "QOcwsJ1FCjFi",
-          "name": "ChecksvgIcon",
-          "moduleFilePath": "plasmic/pracitce_oyster_bay/icons/PlasmicIcon__Checksvg.tsx"
+          "name": "CheckSvgIcon",
+          "moduleFilePath": "plasmic/pracitce_oyster_bay/icons/PlasmicIcon__CheckSvg.tsx"
         },
         {
           "id": "M1CLxOTRtR5N",
@@ -224,8 +271,8 @@
         },
         {
           "id": "qIT_KL1MhIGr",
-          "name": "LogoWhitesvgIcon",
-          "moduleFilePath": "plasmic/pracitce_oyster_bay/icons/PlasmicIcon__LogoWhitesvg.tsx"
+          "name": "LogoWhiteSvgIcon",
+          "moduleFilePath": "plasmic/pracitce_oyster_bay/icons/PlasmicIcon__LogoWhiteSvg.tsx"
         },
         {
           "id": "UbCcwcWXMOYG",
@@ -269,8 +316,8 @@
         },
         {
           "id": "7CtWcYdGlmmP",
-          "name": "QuotessvgIcon",
-          "moduleFilePath": "plasmic/pracitce_oyster_bay/icons/PlasmicIcon__Quotessvg.tsx"
+          "name": "QuotesSvgIcon",
+          "moduleFilePath": "plasmic/pracitce_oyster_bay/icons/PlasmicIcon__QuotesSvg.tsx"
         },
         {
           "id": "iRLbodS886l",
@@ -471,14 +518,26 @@
         {
           "id": "XyUwtAKc-3",
           "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
           "componentImportPath": "@plasmicapp/react-web"
         },
         {
           "id": "vXoUaJoc3f",
           "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        },
+        {
+          "id": "-276YMIT3j",
+          "name": "HelloWorld",
+          "displayName": "HelloWorld",
+          "componentImportPath": "~/components/HelloWorld"
         }
-      ]
+      ],
+      "splitsProviderFilePath": "",
+      "styleTokensProviderFilePath": "plasmic/pracitce_oyster_bay/PlasmicStyleTokensProvider.tsx",
+      "projectModuleFilePath": "plasmic/pracitce_oyster_bay/plasmic.tsx",
+      "customFunctions": []
     }
   ],
   "globalVariants": {
@@ -492,6 +551,6 @@
     ]
   },
   "wrapPagesWithGlobalContexts": true,
-  "cliVersion": "0.1.275",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.275/dist/plasmic.schema.json"
+  "cliVersion": "0.1.343",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.343/dist/plasmic.schema.json"
 }

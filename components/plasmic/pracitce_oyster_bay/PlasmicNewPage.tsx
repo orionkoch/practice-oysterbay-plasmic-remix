@@ -1,6 +1,6 @@
-// @ts-nocheck
 /* eslint-disable */
 /* tslint:disable */
+// @ts-nocheck
 /* prettier-ignore-start */
 
 /** @jsxRuntime classic */
@@ -13,30 +13,60 @@
 
 import * as React from "react";
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
-
 import {
-  hasVariant,
-  classNames,
-  wrapWithClassName,
-  createPlasmicElementProxy,
-  makeFragment,
+  Flex as Flex__,
   MultiChoiceArg,
+  PlasmicDataSourceContextProvider as PlasmicDataSourceContextProvider__,
+  PlasmicIcon as PlasmicIcon__,
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  PlasmicPageGuard as PlasmicPageGuard__,
   SingleBooleanChoiceArg,
   SingleChoiceArg,
-  pick,
-  omit,
-  useTrigger,
+  Stack as Stack__,
   StrictProps,
+  Trans as Trans__,
+  classNames,
+  createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  generateOnMutateForSpec,
+  generateStateOnChangeProp,
+  generateStateOnChangePropForCodeComponents,
+  generateStateValueProp,
+  get as $stateGet,
+  hasVariant,
+  initializeCodeComponentStates,
+  initializePlasmicStates,
+  makeFragment,
+  omit,
+  pick,
+  renderPlasmicSlot,
+  set as $stateSet,
+  useCurrentUser,
+  useDollarState,
+  usePlasmicTranslator,
+  useTrigger,
+  wrapWithClassName
 } from "@plasmicapp/react-web";
+import {
+  DataCtxReader as DataCtxReader__,
+  useDataEnv,
+  useGlobalActions
+} from "@plasmicapp/react-web/lib/host";
+import * as plasmicAuth from "@plasmicapp/react-web/lib/auth";
+
+import { usePlasmicDataSourceContext } from "@plasmicapp/data-sources-context";
+
+import { _useGlobalVariants } from "./plasmic"; // plasmic-import: dPRrTyFHK7W9ZJqYsJHqzM/projectModule
+import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: dPRrTyFHK7W9ZJqYsJHqzM/styleTokensProvider
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_pracitce_oyster_bay.module.css"; // plasmic-import: dPRrTyFHK7W9ZJqYsJHqzM/projectcss
 import sty from "./PlasmicNewPage.module.css"; // plasmic-import: GemSAzldPG/css
+
+createPlasmicElementProxy;
 
 export type PlasmicNewPage__VariantMembers = {};
 export type PlasmicNewPage__VariantsArgs = {};
@@ -48,20 +78,14 @@ type ArgPropType = keyof PlasmicNewPage__ArgsType;
 export const PlasmicNewPage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicNewPage__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: Flex__<"div">;
 };
 
 export interface DefaultNewPageProps {
   className?: string;
 }
 
-const __wrapUserFunction =
-  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
-const __wrapUserPromise =
-  globalThis.__PlasmicWrapUserPromise ??
-  (async (loc, promise) => {
-    return await promise;
-  });
+const $$ = {};
 
 function PlasmicNewPage__RenderFunc(props: {
   variants: PlasmicNewPage__VariantsArgs;
@@ -71,35 +95,48 @@ function PlasmicNewPage__RenderFunc(props: {
 }) {
   const { variants, overrides, forNode } = props;
 
-  const $ctx = ph.useDataEnv?.() || {};
-  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
+        Object.fromEntries(
+          Object.entries(props.args).filter(([_, v]) => v !== undefined)
+        )
+      ),
+    [props.args]
+  );
 
   const $props = {
     ...args,
     ...variants
   };
+
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const currentUser = p.useCurrentUser?.() || {};
-  const [$queries, setDollarQueries] = React.useState({});
+  const currentUser = useCurrentUser?.() || {};
+
+  const styleTokensClassNames = _useStyleTokens();
 
   return (
     <React.Fragment>
-      <div
-        data-plasmic-name={"root"}
-        data-plasmic-override={overrides.root}
-        data-plasmic-root={true}
-        data-plasmic-for-node={forNode}
-        className={classNames(
-          projectcss.all,
-          projectcss.root_reset,
-          projectcss.plasmic_default_styles,
-          projectcss.plasmic_mixins,
-          projectcss.plasmic_tokens,
-          sty.root
-        )}
-      />
+      <div className={projectcss.plasmic_page_wrapper}>
+        <div
+          data-plasmic-name={"root"}
+          data-plasmic-override={overrides.root}
+          data-plasmic-root={true}
+          data-plasmic-for-node={forNode}
+          className={classNames(
+            projectcss.all,
+            projectcss.root_reset,
+            projectcss.plasmic_default_styles,
+            projectcss.plasmic_mixins,
+            styleTokensClassNames,
+            sty.root
+          )}
+        />
+      </div>
     </React.Fragment>
   ) as React.ReactElement | null;
 }
@@ -109,7 +146,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  typeof PlasmicDescendants[T][number];
+  (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
 };
@@ -126,15 +163,15 @@ type NodeComponentProps<T extends NodeNameType> =
     args?: PlasmicNewPage__ArgsType;
     overrides?: NodeOverridesType<T>;
   } & Omit<PlasmicNewPage__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
-    /* Specify args directly as props*/ Omit<
-      PlasmicNewPage__ArgsType,
-      ReservedPropsType
-    > &
-    /* Specify overrides for each element directly as props*/ Omit<
+    // Specify args directly as props
+    Omit<PlasmicNewPage__ArgsType, ReservedPropsType> &
+    // Specify overrides for each element directly as props
+    Omit<
       NodeOverridesType<T>,
       ReservedPropsType | VariantPropType | ArgPropType
     > &
-    /* Specify props for the root element*/ Omit<
+    // Specify props for the root element
+    Omit<
       Partial<React.ComponentProps<NodeDefaultElementType[T]>>,
       ReservedPropsType | VariantPropType | ArgPropType | DescendantsType<T>
     >;
@@ -148,7 +185,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       () =>
         deriveRenderOpts(props, {
           name: nodeName,
-          descendantNames: [...PlasmicDescendants[nodeName]],
+          descendantNames: PlasmicDescendants[nodeName],
           internalArgPropNames: PlasmicNewPage__ArgProps,
           internalVariantPropNames: PlasmicNewPage__VariantProps
         }),
@@ -169,9 +206,34 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   return func;
 }
 
+function withUsePlasmicAuth<P extends object>(
+  WrappedComponent: React.ComponentType<P>
+) {
+  const WithUsePlasmicAuthComponent: React.FC<P> = props => {
+    const dataSourceCtx = usePlasmicDataSourceContext() ?? {};
+    const { isUserLoading, user, token } = plasmicAuth.usePlasmicAuth({
+      appId: "dPRrTyFHK7W9ZJqYsJHqzM"
+    });
+
+    return (
+      <PlasmicDataSourceContextProvider__
+        value={{
+          ...dataSourceCtx,
+          isUserLoading,
+          userAuthToken: token,
+          user
+        }}
+      >
+        <WrappedComponent {...props} />
+      </PlasmicDataSourceContextProvider__>
+    );
+  };
+  return WithUsePlasmicAuthComponent;
+}
+
 export const PlasmicNewPage = Object.assign(
   // Top-level PlasmicNewPage renders the root element
-  makeNodeComponent("root"),
+  withUsePlasmicAuth(makeNodeComponent("root")),
   {
     // Helper components rendering sub-elements
 

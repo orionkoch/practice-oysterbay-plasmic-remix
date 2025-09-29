@@ -1,15 +1,15 @@
-// @ts-nocheck
 /* eslint-disable */
 /* tslint:disable */
+// @ts-nocheck
 /* prettier-ignore-start */
 import React from "react";
 import { classNames } from "@plasmicapp/react-web";
 
-export type QuotessvgIconProps = React.ComponentProps<"svg"> & {
+export type QuotesSvgIconProps = React.ComponentProps<"svg"> & {
   title?: string;
 };
 
-export function QuotessvgIcon(props: QuotessvgIconProps) {
+export function QuotesSvgIcon(props: QuotesSvgIconProps) {
   const { className, style, title, ...restProps } = props;
   return (
     <svg
@@ -38,5 +38,5 @@ export function QuotessvgIcon(props: QuotessvgIconProps) {
   );
 }
 
-export default QuotessvgIcon;
+export default QuotesSvgIcon;
 /* prettier-ignore-end */

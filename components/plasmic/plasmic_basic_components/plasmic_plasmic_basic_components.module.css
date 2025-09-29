@@ -1,7 +1,3 @@
-.plasmic_default_styles {
-  --mixin-KIzxF7SZdO_white-space: pre-wrap;
-}
-
 :where(.all) {
   display: block;
   white-space: inherit;
@@ -11,6 +7,8 @@
   background: none;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  row-gap: 0px;
+  column-gap: 0px;
   box-shadow: none;
   box-sizing: border-box;
   text-decoration-line: none;
@@ -24,9 +22,10 @@
   background: none;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  row-gap: 0px;
+  column-gap: 0px;
   box-shadow: none;
   box-sizing: border-box;
-  text-decoration-line: none;
   margin: 0;
   border-width: 0px;
 }
@@ -311,5 +310,4 @@
   white-space: normal;
 }
 :where(.root_reset) {
-  white-space: var(--mixin-KIzxF7SZdO_white-space);
 }
