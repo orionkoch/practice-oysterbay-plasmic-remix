@@ -17,6 +17,7 @@ export const PLASMIC = initPlasmicLoader({
 
 PLASMIC.registerComponent(HelloWorld, {
   name: 'HelloWorld',
+  importPath: '~/components/HelloWorld',
   props: {
     verbose: 'boolean',
     children: 'slot'
